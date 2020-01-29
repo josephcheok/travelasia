@@ -1,0 +1,319 @@
+/*
+Theme Name: Joseph Theme
+Author: Joseph Cheok
+*/
+
+body {
+  background: #e7e7e7;
+}
+
+header {
+  background: #fff;
+  width: 100%;
+  height: 100px;
+}
+
+.logo {
+  background-image: url(/assets/img/Logo-TravelAsia.png);
+}
+
+div.top-menu-class ul {
+  list-style-type: none;
+  list-style: none;
+  list-style-image: none;
+  padding-left: 0;
+  margin-left: -20px;
+}
+
+div.top-menu-class li {
+  padding: 20px;
+  display: inline;
+}
+
+div.top-menu-class a {
+  color: black;
+}
+
+.sticky-top {
+  height: 35px;
+}
+
+.main-article {
+  padding-top: 10px !important;
+}
+
+/* Nav Bar Styling */
+
+.foundation-5-top-bar {
+  background: #333;
+  color: #fefefe;
+}
+
+.foundation-5-top-bar .menu {
+  background: #333;
+}
+
+.foundation-5-top-bar .menu a {
+  color: #fefefe;
+}
+
+.foundation-5-top-bar .is-dropdown-submenu {
+  border: 0;
+}
+
+.foundation-5-top-bar .is-dropdown-submenu-item.opens-right a::after {
+  border-color: transparent transparent transparent #fefefe;
+}
+
+.foundation-5-top-bar .js-drilldown-back > a::before {
+  border-color: transparent #fefefe transparent transparent;
+}
+
+.foundation-5-top-bar .is-drilldown-submenu-parent > a::after {
+  border-color: transparent transparent transparent #fefefe;
+}
+
+.foundation-5-top-bar
+  .dropdown.menu.medium-horizontal
+  > li.is-dropdown-submenu-parent
+  > a::after {
+  border-color: #fefefe transparent transparent;
+}
+
+.foundation-5-top-bar li {
+  list-style-type: none;
+}
+
+.category-team {
+  background: red;
+}
+
+/* Orbit Styling */
+
+.docs-example-orbit-slide {
+  padding: 2rem 4rem;
+  color: #fefefe;
+}
+.orbit-slide:nth-of-type(1) .docs-example-orbit-slide {
+  background: dodgerblue;
+}
+.orbit-slide:nth-of-type(2) .docs-example-orbit-slide {
+  background: rebeccapurple;
+}
+.orbit-slide:nth-of-type(3) .docs-example-orbit-slide {
+  background: darkgoldenrod;
+}
+.orbit-slide:nth-of-type(4) .docs-example-orbit-slide {
+  background: lightseagreen;
+}
+
+/* Credentials Styling */
+/* 
+.credentials {
+  background-color: #477de7;
+} */
+
+/* Tour CPT Styling on Home Page */
+
+body.home div.card-section {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+body.home div.title {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+body.home div.time {
+  text-align: center;
+  color: grey;
+}
+
+body.home div.price {
+  font-family: "Fredoka One", cursive;
+  text-align: right;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #4692e7;
+}
+
+#primary {
+  margin-top: 50px;
+}
+
+/* Footer Styling */
+
+.custom-footer {
+  background-color: #333;
+  color: #fefefe;
+  font-family: "Poppins", sans-serif;
+  /* position: fixed;
+  top: auto;
+  bottom: 0;
+  width: 100%; */
+}
+
+#slogan1 {
+  margin-left: 5px;
+  margin-top: 10px;
+  color: #d5e5ff;
+}
+
+#slogan2 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 2em;
+  margin-left: 5px;
+}
+
+#address {
+  font-size: 0.9em;
+  font-weight: 900;
+}
+
+h6 {
+  font-weight: 900;
+}
+
+.fab {
+  padding-right: 10px;
+  font-size: 1.2em;
+}
+
+/* Tour CPT styling on Tour Page */
+
+.japan {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.tour-summary,
+.tour-description {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tour-description {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tour-title {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 800;
+  font-size: 2.5em;
+}
+
+.tour-title {
+  grid-area: tour-title;
+}
+
+.departure {
+  grid-area: departure;
+}
+
+.arrival {
+  grid-area: arrival;
+}
+
+.price {
+  grid-area: price;
+  font-size: 1.5em;
+}
+
+.amount {
+  font-size: 1.6em;
+  font-weight: 800;
+  color: darkblue;
+}
+
+.min-age {
+  grid-area: min-age;
+}
+
+.max-age {
+  grid-area: max-age;
+}
+
+.slots {
+  grid-area: slots;
+}
+
+.slots-left {
+  grid-area: slots-left;
+}
+
+#min-age {
+  margin-left: 4px;
+}
+
+#max-age {
+  margin-left: 15px;
+}
+
+#slots {
+  margin-left: 3px;
+}
+
+#slots-left {
+  margin-left: 5px;
+}
+
+@media screen and (min-width: 1025px) {
+  .tour-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4px 2fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: calc(10px + (30 - 10) * ((100vw - 992px) / (1920 - 992)));
+    grid-row-gap: calc(10px + (30 - 10) * ((100vw - 992px) / (1920 - 992)));
+    grid-template-areas:
+      ". . ."
+      "tour-title . ."
+      "departure arrival price"
+      "min-age max-age price"
+      "slots slots-left ."
+      ". . .";
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .tour-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4px 2fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: calc(10px + (30 - 10) * ((100vw - 992px) / (1920 - 992)));
+    grid-row-gap: calc(10px + (30 - 10) * ((100vw - 992px) / (1920 - 992)));
+    grid-template-areas:
+      ". ."
+      "tour-title ."
+      "departure arrival"
+      "min-age max-age"
+      "slots slots-left"
+      "price price"
+      ". .";
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .tour-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 14px 2fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr 8px;
+    grid-column-gap: calc(10px + (30 - 10) * ((100vw - 992px) / (1920 - 992)));
+    grid-row-gap: calc(10px + (30 - 10) * ((100vw - 992px) / (1920 - 992)));
+    grid-template-areas:
+      "."
+      "tour-title"
+      "departure"
+      "arrival"
+      "min-age"
+      "max-age"
+      "slots"
+      "slots-left"
+      "price"
+      ".";
+  }
+}
